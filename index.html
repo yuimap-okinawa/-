@@ -20,33 +20,37 @@
       font-weight: bold;
     }
 
-   nav {
-  background: white;
-  padding: 20px 0;
-}
-
   nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 0;
+  gap: 18px;
+  padding: 10px 0;
   margin: 0;
 }
 
 nav li a {
-  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav li a:hover {
-  color: orange !important;
+  background: orange;
+  color: white;
 }
 
-nav li a:visited {
-  color: #222;
+nav li a img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
     .hero {
       background: linear-gradient(135deg, #00b894, #55efc4);
@@ -138,11 +142,11 @@ nav li a:hover {
 </header>
 <nav>
   <ul>
-    <li><a href="index.html">飲食店</a></li>
-    <li><a href="#">美容</a></li>
-    <li><a href="#">レジャー</a></li>
-    <li><a href="map.html">地図で探す</a></li>
-    <li><a href="shops.html">店舗一覧</a></li>
+    <li><a href="index.html"><img src="food-icon.png" alt="飲食店">飲食店</a></li>
+    <li><a href="#"><img src="beauty-icon.png" alt="美容">美容</a></li>
+    <li><a href="#"><img src="leisure-icon.png" alt="レジャー">レジャー</a></li>
+    <li><a href="map.html"><img src="map-icon.png" alt="地図で探す">地図で探す</a></li>
+    <li><a href="shops.html"><img src="shop-icon.png" alt="店舗一覧">店舗一覧</a></li>
   </ul>
 </nav>
 <section style="background-image: url('hero.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 320px; padding: 100px 20px; text-align: center; color: white;">
